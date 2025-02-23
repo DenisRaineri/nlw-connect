@@ -26,7 +26,7 @@ export async function getRanking() {
       };
     })
     .sort((a, b) => {
-      return a.score - b.score;
+      return b.score - a.score;
     });
 
   return { rankingWithScore };
